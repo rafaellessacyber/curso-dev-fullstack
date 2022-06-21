@@ -1,0 +1,37 @@
+body{  /*Para que o corpo do conteúdo mude a cor, necessário ir no html e configurá-lo*/
+  background: #d1d1d1; /*Alteração da cor do corpo do site*//*O "r=red",g="green", "b=blue" e o "rgba" significa a transparência da página. O "#ffff00 é uma forma de rgb decimal, não sendo possível usar a transparência*/
+  font-family: Arial, Helvetica, sans-serif;/*padroniza o fonte de todos os texto, podendo colocar quantas fontes forem necessárias, caso não seja possível atribuir uma determnida fonte no seu texto*/
+  color: rgb(33, 33, 33);/*padroniza para todos os texto do site a mesma cor do texto*/
+}
+
+
+
+.foto-principal{
+  width: 200px;/*reduzi a imagem porque estava muito grande*/
+  border: 2px solid #ffff; /*regra para borda da imagem. Lembrando que essa regra é uma regra simplificada, onde eu consigo escrever 3 propriedades dentro do border, segue exemplo abaixo de bordas não simplificadas*/
+  /*border-width: 5px;
+  border-style: solid;
+  border-color: black;*/
+  border-radius: 50%;/*Permite deixar a borda um pouco mais redonda, conforme o valor desejado do dev, ou seja, quanto mais for o valor, mais redonda será a borda. Para que a borda fique exatamente circular, coloca-se o 50%. Pode-se colocar mais 3 valores distintos, conforme ao que o dev deseja colocar. O primeiro valor o corresponde ao canto superior esquerdo, o "segundo valor" canto superior direito, "o terceiro valor" canto inferior direito, e o "quarto valor" canto inferior esquerdo*/
+  
+  /*margin-top: 30px; ajuda no espaçamento da parte de cima da imagem. Estabelece uma margem
+  margin-bottom: 100px; espaçamento da parte de baixo da imagem com o texto
+  margin-left: 500px; espaçamento da esquerda para direita da imagem*/
+  margin: 30px 30px 30px 30px;/*Valores: topo, direita, baixo,esquerda*/
+
+  padding: 10px ;/*tem o mesmo comportamento similar ao margin, tendo padding top,bottom, left, right, porém opera com o espaçamento interno.*/
+  /*box-model é a junção do border, margin e padding, esses elementos formam a caixinha no dev tools, clicando no inspecionar página.*/
+  box-shadow: 0px 0px 10px #afacaca1;/*Adiciona sombra no nosso elemento e recebe 4 parâmetros(1ºdistância da sombra na horizontal, 2ºdistância da sombra na vertical, 3ºdesfoque da sombra,4ºcor da sombra)*/
+}
+h1{
+  margin-bottom: 0;
+  letter-spacing: -1px;
+}
+
+h2{
+  margin-top: 0;
+  font-style: italic;
+  color: rgb(74 74 74);
+  font-weight: 100;/*por padrão todo "h2" tem a fonte em negrito, utiliza da regra para remover o negrito*/
+  letter-spacing: -1px;/*pode aumentar o dimunir o espaçamento entre as letras*/
+}

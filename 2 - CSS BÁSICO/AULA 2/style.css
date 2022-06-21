@@ -1,0 +1,15 @@
+body{  /*Para que o corpo do conteúdo mude a cor, necessário ir no html e configurá-lo*/
+  background: red; /*Alteração da cor do corpo do site*/
+}
+
+h3{  /*desta forma irá linkar com a tag ao qual queremos que tenha um determinado estilo*/
+  color:green;/*ao invés de escrever uma class para cada "h3", coloca-se "h3" direto para estilazar para todas as tags. Tira-se o class .verde*/
+}
+
+.foto-principal{
+  width: 500px;
+}
+
+#titulo-principal{ /*dentro dessa regra que estiliza a tag ao qual contém o "id"*/
+  color: yellow;
+}

@@ -1,0 +1,13 @@
+body{  /*Para que o corpo do conteúdo mude a cor, necessário ir no html e configurá-lo*/
+ background-image: url(background.jpg);/*regra para inserir imagem no background*/
+ background-repeat: no-repeat;/*usado para imagem não se repetir, ou seja, sem ocupar página toda*/
+ /*background-position: 100% 10%; primeiro valor move para a direita e o segundo valor é referente ao tamanho*/
+ background-position: center center;/* coloca a imagem bem do centro página*/
+ background-size: cover;/*irá ocupar a tela toda da página*/
+ background-attachment: fixed;/*somente o conteúdo da página irá se mover*/
+}
+
+
+P{ /*Altera a cor dos iparágrafos*/
+  color: #212121; /*para converter para rgb, deve ir no google e converter online para rgb*/
+}

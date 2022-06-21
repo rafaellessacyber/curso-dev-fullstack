@@ -1,0 +1,8 @@
+body{  /*Para que o corpo do conteúdo mude a cor, necessário ir no html e configurá-lo*/
+  background: #d1d1d1; /*Alteração da cor do corpo do site*//*O "r=red",g="green", "b=blue" e o "rgba" significa a transparência da página. O "#ffff00 é uma forma de rgb decimal, não sendo possível usar a transparência*/
+}
+
+
+P{ /*Altera a cor dos iparágrafos*/
+  color: rgb(33, 33, 33); /*para converter de decimal para rgb, deve ir no google e converter online para rgb*/
+}

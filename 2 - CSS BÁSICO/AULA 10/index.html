@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt"><!-- refere-se ao qual idioma a que esta se referindo -->
+<head>
+  <meta charset="UTF-8"><!--Tag que define a codificação de caractere dessa página -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafael Lessa dos Santos</title>
+
+  <!-- sempre procurar colocar o link das fontes antes do style, pois ele dependende dessa configuração para assim poder carregar as fontes do site do google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><!-- Tag responsável para importação de arquivvo "css" -->
+</head>
+  <body>
+
+    <div class="container"><!-- divide alguns elementos do html e trabalha juntamente com o css para criar vários elementos visuais. Juntamente com "class= container" irá limitar o nosso site no centro-->
+      <img src="Rafael Lessa.jpg" alt="Foto: Rafael Lessa dos Santos" class="foto-principal"><!-- width ajusta a largura da imagem, recurso do html. O recomendável seria ajustar pelo css. A tag "alt" é responsável por exibir o nome da foto para o caso da imagem não carregar, por algum motivo, seja falha do navegador ou seja pela conexão do usuário. -->
+
+      <h1>Rafael Lessa dos Santos</h1><!-- O id é um identificador único, somente essa tag pode ter o titulo-principal -->
+      <h2>Estudante de T.I</h2>
+
+      <a href="https://www.linkedin.com/in/rafael-lessa-santos-26276a189/" target="_blank">Linkedin</a><!-- Tag "a" é uma tag de âncora aonde o h + ref= hiperlink e referência. "target="_blank" significa que quero um novo alvo, ou seja, quero que o link venha abrir em um nova aba-->
+      - 
+      <a href="https://github.com/rafaellessacyber" target="_blank">Github</a>
+      - <!-- para dar um efeito visual melhor na página, coloca-se o "-" para os links não ficarem tão perto um do outro -->
+      <a href="https://www.instagram.com/rafaellessasantos/" target="_blank">Instagram</a>
+
+      <p>
+        Me chamo <strong>Rafael Lessa dos Santos</strong>, <strong>estudante de T.I</strong><!-- indica ser algo muito forte e relevante dentro do meu parágrafo, tratando-se de algo muito sério e importante -->, moro em <b>Porto Alegre</b>, <b>Rio Grande do Sul</b><!-- essa tag permite colocar o nome em negrito -->. Atualmente estudo Análise e Desenvolvimento de Sistemas, juntamente com o curso prático de <em>FullStack em Javscript</em><!-- tag ao qual também pode deixar a palavra ou frase em itálico, ou seja, é um elemento a que se deseja dar ênfase a um determinado conteúdo --> do Thiago Medeiros. Ambos os curso tem como foco em programação <i>FullStack</i>. No curso prático aprendo a desenvolver projetos reais em situações do dia a dia. Sigo na construção do meu portfólio de projetos por meio de práticas e aprendizado constante.
+      </p>
+
+      <h3 class="verde">Principais habilidades</h3><!-- "class" pode ser uma outra forma de adicionar estilos -->
+      <ul><!-- tag pai de uma lista desordenada-->
+        <li>Html</li><!-- tag de itens da lista -->
+        <li>Css</li>
+        <li>Javascript</li>
+      </ul>
+
+      <h3>Outra coisas que eu gosto de jogar</h3>
+      <p>
+        Javscript, html, css
+      </p>
+
+      <h3>Certifiacados</h3>
+      <ol type="a"><!-- uma lista ordenada ao qual comceça com a tag "ol" juntamente com o atributo "type", ao qual idica o tipo de numeração em que se deseja começar numa lista ordenada.-->
+        <li>Formação FullStack Javascript</li>
+        <li>Montagem e Manutenção de micros + redes</li>
+      </ol>
+    </div>
+
+</body>
+</html>
