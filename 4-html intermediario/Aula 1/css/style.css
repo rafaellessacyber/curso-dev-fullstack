@@ -1,0 +1,96 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, p {
+  margin-bottom: 15px;
+}
+
+.header{
+  background-image: url(https://d1ih8jugeo2m5m.cloudfront.net/2021/07/produtos-mais-vendidos-no-mercado-livre-700x394.jpg);
+  background-size: cover;
+  background-color: grey;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 40px;
+  box-shadow: 0 0 10px black;
+  margin-bottom: 10px;
+ 
+}
+
+.logo{
+  width: 100px;
+}
+
+.container {
+  display: flex
+}
+
+nav {
+  display: block;
+}
+
+.navbar{
+  width: 20%;/*regra criada para que a tag nav ocupe um determinado espaçamento de largura*/
+  
+  padding: 30px;
+  
+}
+
+
+.navbar ul {
+  list-style: none;
+
+}
+
+.navbar ul li {
+  background-color: rgb(136, 3, 3);
+  border-radius: 10px 0;
+  margin-bottom: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+
+
+.content {
+  width: 80%;
+  height: 55vh;
+  background: #ffff;
+  background-color: #cdcccc;
+  box-shadow: 2px 2px 0 rgb(187, 185, 185);
+  padding: 30px 30px;
+  border-radius: 40px 0;
+  margin: 20px 20px 20px 0;
+  
+}
+
+.quem-somos {
+  width: 200px;
+}
+
+.footer {
+  position:absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin-top: auto;
+  background-color: #cdcccc;
+  text-align: center;
+  padding: 20px 0;
+  color: rgb(136, 3, 3);
+}
