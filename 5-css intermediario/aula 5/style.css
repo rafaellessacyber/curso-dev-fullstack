@@ -1,0 +1,9 @@
+div {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  /*overflow: hidden; esconde o texto para que fiquem dentro da caixinha*/
+  overflow: scroll;/*texto fica escondido na caixinha com a barra de rolagem*/
+  overflow-x: hidden;/*esconde a barra de rolagem inferior*/
+  /*overflow: auto; coloca automaticamente as barras de rolagens conforme o tamanho do texto*/
+}

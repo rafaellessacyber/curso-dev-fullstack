@@ -1,0 +1,19 @@
+/*a {
+  width: 150px;
+  height: 150px;
+  /*display: block;utiliza-se para fazer a âncora ter o comportamento de uma caixa.
+  display: inline-block; ele anula o espaçamento do lado para poder encaixa um outro elemento do lado.
+}*/
+
+ul {
+  background:  grey;
+  padding: 20px;
+  /*display: none; tem a finilidade de esconder um determinado elemento na tela.*/
+  /*visibility: hidden; também esconde o elemento, mas porém àrea ocupada pelo esse elemento permanece como se estivesse ocupada.*/
+  opacity: 0.5;/* regra utilizada para determinar o nível de opacidade do elemento que varia de 0 a 1, podendo ter alguns níveis de opacidade, como 0.2 etc.*/
+}
+
+ul li {
+  display: inline;/*regra utilizada para que os links fiquem um do lado do outro*/
+  margin: 20px;
+}

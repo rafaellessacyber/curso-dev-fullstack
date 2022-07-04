@@ -1,0 +1,20 @@
+
+.conteudo {
+  position: relative;/*faz com o que todos os elementos relativos a ele se posicione à ele e não ao body*/
+  height: 500px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.quadrado {
+  position: absolute;
+  /*top: 0;significa que eu não quero que tenha nenhuma distância do topo*/
+  left: 50px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  background: black;
+  color: red;
+  font-size: 11px;
+  
+}

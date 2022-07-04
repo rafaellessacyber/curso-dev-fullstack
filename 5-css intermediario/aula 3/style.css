@@ -1,0 +1,16 @@
+/*a {
+  width: 150px;
+  height: 150px;
+  /*display: block;utiliza-se para fazer a âncora ter o comportamento de uma caixa.
+  display: inline-block; ele anula o espaçamento do lado para poder encaixa um outro elemento do lado.
+}*/
+
+ul {
+  background:  grey;
+  padding: 20px;
+}
+
+ul li {
+  display: inline;/*regra utilizada para que os links fiquem um do lado do outro*/
+  margin: 20px;
+}

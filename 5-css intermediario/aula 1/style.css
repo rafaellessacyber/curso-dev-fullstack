@@ -1,0 +1,31 @@
+
+.exemplo {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+}
+
+
+.exemplo1 p.red  { /*p.red aplica a classe somente na tag p para mudar de cor. Essa mesma regra juntamentec com a classe ".exemplo", da-se o nome de combination*/
+  color: red;
+}
+
+.margin {
+  margin: 50px;
+}
+
+h1, h2, h3 { /*pode-se usar essa mesa regra de tag para as classes para terem o mesmo elemento*/
+  color: blue; 
+}
+
+.exemplo2 > p { /*aplica a primeira regra naqueles que são filhos direto da classe dentro da div*/
+  color: blue;
+}
+
+.exemplo3 + p {
+  color: red; /*procura o primeiro elemento irmão dentro do exemplo3*/
+}
+
+.exemplo4 ~ p {
+  color: green;/*pega todos os irmão diretos.*/
+}

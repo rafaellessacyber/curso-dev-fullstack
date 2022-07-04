@@ -1,0 +1,24 @@
+
+h1{
+  text-shadow: 2px 2px 30px red;/*age semelhante ao box shadow, porém com finalidade para sombreamento de texto*/
+}
+
+p{
+  font-size: 30px;
+  color: green;
+  text-align: justify;
+  font-weight: bold;
+  font-style: italic;
+  /*font-variant: small-caps; pode fazer a fonte varia*/
+  text-transform: lowercase;/*permite colocar a fonte em caixa alta, letra maiúcula ou minúsculas.*/
+  text-indent: 50px;/*adiciona espaço no começo do paragráfo, usado geralmente em livros ou blogs*/
+  word-wrap: 20px;/*é adicionado espaço para cada palavra dentro de um frase ou parágrafo*/
+  line-height: 50px;/*adiciona espaço entre o tamanho da altura da linhas de cada parágrafo*/ 
+}
+
+a {
+  /*text-decoration: none; remove o anderline do link*/
+  text-decoration: overline ;/*move a linha do link pra cima*/
+  letter-spacing: 20px;/*adiciona espaço para cada letra dentro de uma palavra*/
+
+}

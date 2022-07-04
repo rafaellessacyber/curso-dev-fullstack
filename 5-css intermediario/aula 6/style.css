@@ -1,0 +1,49 @@
+/*pseudo-classes: muda o estilo de um determinado elemento, quando o usuário passa o mouse*/
+
+a {
+  color: red;
+}
+
+a:hover {
+  color: green;
+  font-weight: bold;/*a:hover é uma pseudo-classe para mudar estilo quando o usuário passar o mouse sob o mesmo*/
+}
+
+a:hover + .caixa{
+  display: block;/*regra criada para pegar o elemento do irmão e assim fazer a caixa aparecer quando usuário colocar o mouse em cima*/
+}
+
+a:visited {
+  color: yellow;/*pseudo-classe que indica quando o usuário já visitou esse link*/
+}
+
+a:active {
+  color: pink;/*funciona para quando o usuário ficar pressionando o link*/
+}
+
+.caixa {
+  display: none;/*não aparecer a caixa da div*/
+  width: 150px;
+  height: 150px;
+  background: black
+}
+
+.caixa:hover {
+  background-color: green;
+}
+
+ul li:first-child {
+  color: red;/*aplica a regra no primeiro filho*/
+}
+
+ul li:last-child {
+  color: blue;/*aplica a regra no último filho*/
+}
+
+.exemplo p:first-child {
+  color: green;
+}
+
+.exemplo2 p:nth-child(3) {
+  color: orange;/*aplica a regra para pegar um determinado elemento desejado*/
+}
