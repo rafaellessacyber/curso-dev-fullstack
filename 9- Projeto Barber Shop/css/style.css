@@ -1,0 +1,176 @@
+:root {
+  --color-primary: #917758;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/**************
+*     HOME
+***************/
+
+.home {
+  position: relative;/* coloca-se esse regra na home para poder inserir o absoluti no banner e centralizar o elemento */
+  background-size: cover;
+  background: url(../images/bg-home.jpg);
+  height: 100vh;/* viewport height (àrea visível do meu navegador */
+}
+
+.home .header{
+  padding: 30px 0;
+}
+
+.home .header .nav {
+  display: flex;
+  justify-content: center;
+}
+
+.home .header .nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.home .header .nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+
+.home .header .nav ul li a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 30px;
+}
+
+.home .header .nav ul li a:hover {
+  border-bottom: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.home .header .nav ul li .logo {
+  margin: 0 30px;
+}
+
+
+/************************
+*     HOME - BANNER
+************************/
+
+.home .banner {
+  position: absolute;/* artimanha usada para poder posicionar o elemento no centro da tela */
+  top: 50%;
+  left: 50%;
+  height: 282px;
+  width: 770px;
+  margin-left: -385px;
+  margin-top: -75px;
+  color: white;
+  text-align: center;
+}
+
+.home .banner span {
+  display: block;
+}
+
+.home .banner .slogan1 {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+.home .banner h1 {
+  font-size: 130px;
+}
+
+.home .banner .slogan2 {
+  margin-bottom: 15px;
+}
+
+
+/*****************
+*     ABOUT
+******************/
+
+.about {
+  height: 100vh;
+  background-color: var(--color-primary);
+}
+
+.about .container{
+  display: flex;/* regra usada para os filhos do container fiquem lado a lado */
+}
+
+.about .timing {
+  padding: 20px;
+  width: 33%;
+  background-image: url(../images/brush-big.jpg);
+}
+
+.about .timing .overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about .timing .icon-cut {
+  width: 50px;
+}
+
+.about .timing h3 {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-primary);
+  width: fit-content;/* faz com o que o h3 venha a ficar no tamanho no conteúdo e não no tamanho padrão do h3 */
+  margin: 0 auto 30px auto;/* centraliza o h3 na div e separa os elementos da parte de baixo do h3 */
+  font-size: 30px;
+}
+
+.about .timing .text {
+  margin: 10px 0;
+}
+
+.about .timing .text:after {
+  content:  '•';/* regra para aparecer algo depois do text. A bolinha utizada é um "dot char",  ao qual pode ser copiada pesquisando no google.*/
+  display: block;/* por padrão é necessário definir o display no after.*/
+  font-size: 25px;
+  color: white;
+  margin-top: 10px;
+}
+
+.about .timing .text:last-of-type:after {
+  content: '|';/* sobreescreve a regra para o último item*/
+}
+
+.about .timing .text h4 {
+  color: grey;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.about .timing span {
+  color: white;
+  font-size: 15px;
+  display: block;
+}
+
+.about .experience {
+  width: 66%;
+}
