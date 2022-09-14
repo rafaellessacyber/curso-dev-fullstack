@@ -1,0 +1,25 @@
+@mixin reset-list($margin: 0,$espacamento: 0,$estilo: none) { /*Regra criada para elementos que precisam que suas listas sejam zeradas atravez da ferramenta "@mixin+nome desejado. Também pode receber valores por meio de um parenteses. No caso de não passar os valores ao incluir a lista no @include, pode-se zerar os valores através do ":" e assim argumentar com a função zero."*/
+  margin: $margin;
+  padding: $espacamento;
+  list-style: $estilo;
+}
+
+
+@mixin  bg-effect($effect) {
+  @if $effect == success {
+    background-color: green;
+  }
+
+  @else if $effect == warning {
+    color: black;
+    background-color: yellow;
+  }
+
+  @else if $effect == danger {
+    background-color: red;
+  }
+
+  @else {
+    background-color: white;
+  }
+}

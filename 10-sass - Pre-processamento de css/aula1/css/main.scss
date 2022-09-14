@@ -1,0 +1,77 @@
+@import 'variables';
+@import 'base';/*forma correta de importar os estilos do arquivo base por meio de partials*/
+@import 'mixins';
+@import 'extends';
+
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  .box {
+    width: 30%;
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+
+    &.active{
+      background-color: $color-secondary;/* regra criada para definir propriedades no elemento irmão inserindo um "&" antes da classe desejada*/
+    }
+
+    h2{
+      font-family: $font-primary;
+      font-size: 22px;
+      margin: 10px 20px 30px 20px;
+      /*margin: { /o sass nessa regra permite colocar o margin no modo hieráquico
+        top: 10px;
+        left: 20px;
+        right: 30px;
+        bottom: 22px;
+      }*/
+      
+    }
+
+    p{
+      font-family: $font-secondary;
+      font-size: 18px;
+
+      &.hidden {
+        display: none;/*regra criada para esconder o paragrafo dessa classe*/
+      }
+    }
+
+    ul {
+      @include reset-list();/*Resaltando que se trata da regra do "@mixin" ao qual o utilizamos a ferramenta do "@include + nome da lista", para que assim seja incluido a regra desejada no elemento escolhido*/
+    }
+
+
+    a {
+      color: green;
+
+      &:hover {
+        color: yellow;
+
+        &+ p.hidden { /*regra criada para pegar o elemento irmão dessa classe aparecer ao passar o mouse*/
+          display: block;
+        }
+      }
+    }
+
+    .success {
+      @extend %box-alert;
+      @include bg-effect(success)
+    }
+
+    .danger {
+      @extend %box-alert;
+      @include bg-effect(danger);
+    }
+
+    .warning {
+      @extend %box-alert;
+      @include bg-effect(warning);
+    }
+
+  }
+}
