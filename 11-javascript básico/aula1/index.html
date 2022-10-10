@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1 id="titulo">Exemplo de Título</h1>
+
+  <!--É possível escrever códigos de javascript por esta tag, porém num projeto isso não é uma boa prática-->
+  <script>
+    //alert('Hello World!')
+
+    //console.log('Hello World')//console é algo que aparece somente no dev tools
+    //console.error('Exemplo de erro')
+  
+    //document.write('Hello World')//escreve algo no meu documento. É algo muito pouco usado
+    document.querySelector('#titulo').innerHTML = 'Alterei o titulo'//permite manipular o elemento atraves da id da tag por meio de comandos
+  </script>
+
+</body>
+
+</html>
